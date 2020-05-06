@@ -4,14 +4,17 @@ const Schema = mongoose.Schema;
 // Create Schema
 const dateIdeaSchema = new Schema({
     name: { type: String, required: true },
-    type: { type: String, required: true },
-    address: {
-        street: Number,
+    description: String,
+    type: [{ type: String }],
+    address: [{
+        streetNumber: Number,
+        street: String,
         city: String,
         state: String,
         zip: Number
-    },
-    phoneNumber: Number
+    }],
+    phoneNumber: Number,
+    img: String
 }, { timestamps: true });
 
 //  Create Model from our Schema
