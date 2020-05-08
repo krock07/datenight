@@ -13,8 +13,9 @@ render() {
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
         ></link>
+        <link rel="stylesheet" href="/styles.css"/>
         </head>
-        <body>
+        <body className="site">
         <header>
             <nav class="nav-extended white">
             <div class="nav-wrapper">
@@ -50,6 +51,7 @@ render() {
             />
             </div>
         </header>
+        <main className="site-content">
         {this.props.children}
         <script src="/js/app.js"></script>
         <script
@@ -66,7 +68,19 @@ render() {
         <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC53g2ClMRLO6AufwQOrDCbhoMv2osaBks&callback=initMap">
     </script>
+    </main>
         </body>
+       
+        <div className="footer">
+            <div className="footer-content">
+                <div className="footer-section about"></div>
+                <div className="footer-section links"></div>
+            </div>
+            <div className="footer-bottom">
+                &copy; datenightap.com | Designed by Khoury 'Yoda' Smith
+            </div>
+        </div>
+        
     </html>
     );
 }

@@ -10,8 +10,9 @@ class Index extends React.Component {
     return (
     <Default>
         <h1 className="center-align">Lets Get Started</h1>
+        <div className="container">
         <p className="center-align"> Are you looking for some date inspiration? Maybe you are craving some romantic ideas to surprise your other half! Perhaps you’re looking for fun things to do with your girlfriends? If you are a do it yourself kind of person, browse these date ideas for inspiration and great discounts.  Whether you are in your home town, or traveling the country, we have spectacular date experiences for you.  We will be adding more ideas, discounts and locations regularly, so bookmark this page and keep coming back!</p>
-        <div className="containers">
+        
 
         {dates.map((date, index) => {
             // console.log(date.address[0].streetNumber, "address test")
@@ -21,7 +22,7 @@ class Index extends React.Component {
             return (
               
             <div className="row">
-                <div className="col s12 m7">
+                <div className="col s12 m6">
                 <div className="card hoverable">
                     <div className="card-image waves-effect waves-block waves-light">
                     <img

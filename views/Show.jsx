@@ -6,10 +6,17 @@ render() {
     const { date } = this.props;
     const { description } = date;
     const { name } = date;
+    const {phoneNumber} = date;
+    const {type} = date;
 
     return (
     <Default>
       <div className="container">
+        {/* <div className="parent">
+          <div className="child one"><img src={`${date.img}`}/>
+          </div>
+          <div className="child one">{description}</div>
+        </div> */}
     <h1>{name}</h1>
         <div class="row">
     <div class="col s12 m6 l3">
@@ -18,26 +25,19 @@ render() {
           <img src={`${date.img}`}/>
         </div>
         <div class="card-content">
-        <span class="card-title">Card Title</span>
+      <span class="card-title">{type}</span>
           <p>{description}</p>
         </div>
       </div>
     </div>
     <div class="col s12 m6 l3 m6">
-    <h1>My Google Map</h1>
+    {/* <h1>My Google Map</h1> */}
     <div id="maps"></div>
+      <h4>{phoneNumber}</h4>
     </div>
     </div>
   </div>
-        {/* <div className="container">
-        <div className="header">
-        <img src={`${date.img}`} alt={name} />
-        </div>
-        <div className="describe">
-            <p>{description}</p>
-        </div>
-        </div> */}
-        {/* </div> */}
+       
     </Default>
     );
 }
