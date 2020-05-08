@@ -16,27 +16,31 @@ render() {
         </head>
         <body>
         <header>
-            <nav class="nav-extended red darken-4">
+            <nav class="nav-extended white">
             <div class="nav-wrapper">
                 <a href="/dates" class="brand-logo left">
                 <img src="/images/DATE-NIGHT.png" alt="Date Night Logo" />
                 </a>
             </div>
             <div class="nav-content">
+                <div className="row">
+                    <div className="col s12">
                 <ul class="tabs tabs-transparent ">
-                <li class="tab">
+                <li class="tab col s3">
                     <a href="#test1"></a>
                 </li>
-                <li class="tab">
+                <li class="tab col s3">
                     <a class="active" href="#test2"></a>
                 </li>
-                <li class="tab disabled">
-                    <a href="#test3">DATE IDEAS</a>
+                <li class="tab col s3">
+                    <a className="black-text text-darken-2" href="/dates/new">DATE IDEAS</a>
                 </li>
-                <li class="tab">
-                    <a href="#test4">WELCOME</a>
+                <li class="tab col s3">
+                    <a className="black-text text-darken-2" href="/dates">WELCOME</a>
                 </li>
                 </ul>
+                </div>
+                </div>
             </div>
             </nav>
             <div className="header-image ">
@@ -47,12 +51,21 @@ render() {
             </div>
         </header>
         {this.props.children}
+        <script src="/js/app.js"></script>
+        <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"
+        
         ></script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC53g2ClMRLO6AufwQOrDCbhoMv2osaBks&callback=initMap">
+    </script>
         </body>
     </html>
     );
