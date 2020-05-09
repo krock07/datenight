@@ -7,6 +7,7 @@ const DateI = require('../models/dates.js');
 router.get('/', (req, res) => {
     // Use dates model to get all Dates
     DateI.find({}, (error, allDates) => {
+        console.log(allDates)
         res.render('Index', {
             dates: allDates
         })
@@ -27,6 +28,9 @@ router.post('/', (req, res) => {
         res.redirect('/dates');
     });
 });
+
+
+
 
 // Show
 router.get('/:id', (req, res) => {

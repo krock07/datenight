@@ -3,9 +3,10 @@
     width: 100% !important;
 }
 
-.container{
-    /* display: flex; */
-}
+/* .container{
+    display: flex;
+    justify-content: space-around;
+} */
 
 .footer .footer-content{
     
@@ -17,9 +18,9 @@
     width: 100%;
     text-align: center;
     padding-top: 20px;
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
 }
 
 .parent{
@@ -46,4 +47,34 @@
 }
 .site-content{
     flex: 1 0 auto;
+}
+
+.carousel .carousel-item {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+.card-panel {
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: -1rem 0 1rem 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color:#d81b60;
+    margin-right: 24px;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    text-transform: uppercase;
 }

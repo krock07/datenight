@@ -4,6 +4,8 @@ const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 
+
+
 //PORT
 
 const PORT = process.env.PORT || 3000;
@@ -37,7 +39,7 @@ app.use('/dates', datesController);
 
 
 
-// Create
+// // Create
 
 // app.get('/seed', async (req, res) => {
 //     const newDates =
@@ -46,26 +48,26 @@ app.use('/dates', datesController);
 //         name: 'Escape Room Date Night',
 //         description: 'The timer starts ticking down from sixty minutes and you immediately feel an adrenaline rush. Will you make it out of this escape room before the clock reaches zero? You rush around and begin to make sense of hidden clues and riddles.',
 //         type: ['Cooperative', 'Active', 'Adventure'], 
-//         address: [{
+//         address: {
 //             'streetNumber': 209,
 //             'street': 'S Olive Ave',
 //             'city': 'West Palm Beach',
 //             'state': 'Florida',
 //             'zip': 33401
-//         }],
+//         },
 //         phoneNumber: 5616695120,
 //         img:'https://worldofescapes-com.s3.amazonaws.com/uploads/quests/10890/large/the-escape-game-san-francisco-gold-rush.jpg'
 //     }, {
 //             name: 'Performers Playground',
 //             description: 'Performers Playground Is A Specialized Boutique Performing Arts Studio With An Exciting After School Program. We Provide Top Notch Study In The Areas Of Dance, Theatre and Voice And Our After School Program Immerses Our Students In All Three With Fun Extras Like Art And Yoga. ',
 //             type: ['Performing Arts', 'Dance'], 
-//             address: [{
+//             address: {
 //                 'streetNumber': 12900,
 //                 'street': 'West State Road 84',
 //                 'city': 'Ft Lauderdale',
 //                 'state': 'Florida',
 //                 'zip': 33325
-//             }],
+//             },
 //             phoneNumber: 9543688534,
 //             img: 'http://performersplayground.com/wp-content/uploads/2019/01/211.jpg'
 //         }

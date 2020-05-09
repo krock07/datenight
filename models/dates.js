@@ -6,13 +6,13 @@ const dateIdeaSchema = new Schema({
     name: { type: String, required: true },
     description: String,
     type: [{ type: String }],
-    address: [{
+    address: {
         streetNumber: Number,
         street: String,
         city: String,
         state: String,
         zip: Number
-    }],
+},
     phoneNumber: Number,
     img: String
 }, { timestamps: true });

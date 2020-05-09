@@ -26,7 +26,7 @@ render() {
             <div class="nav-content">
                 <div className="row">
                     <div className="col s12">
-                <ul class="tabs tabs-transparent ">
+                <ul class="tabs tabs-transparent tab-demo ">
                 <li class="tab col s3">
                     <a href="#test1"></a>
                 </li>
@@ -44,27 +44,31 @@ render() {
                 </div>
             </div>
             </nav>
+            
             <div className="header-image ">
             <img className="responsive-img"
                 src="https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
                 alt=""
+                
             />
             </div>
         </header>
         <main className="site-content">
         {this.props.children}
         <script src="/js/app.js"></script>
+        
         <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"
-        
         ></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC53g2ClMRLO6AufwQOrDCbhoMv2osaBks&callback=initMap">
     </script>

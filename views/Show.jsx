@@ -17,7 +17,7 @@ render() {
           </div>
           <div className="child one">{description}</div>
         </div> */}
-    <h1>{name}</h1>
+    <h1 className="center-align">{name}</h1>
         <div class="row">
     <div class="col s12 m6 l3">
       <div class="card">
@@ -33,11 +33,10 @@ render() {
     <div class="col s12 m6 l3 m6">
     {/* <h1>My Google Map</h1> */}
     <div id="maps"></div>
-      <h4>{phoneNumber}</h4>
+      <blockquote>Phone Number: {phoneNumber}</blockquote>
     </div>
     </div>
   </div>
-       
     </Default>
     );
 }
