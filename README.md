@@ -38,4 +38,4 @@ A web application server framework for the backend that helps with the following
 ![](https://raw.githubusercontent.com/krock07/datenight/master/public/images/Screen%20Shot%202020-05-09%20at%2012.12.35%20AM.png)
 
 ## APP link
-[Date Night](krock07.github.io)
+[Date Night](https://date-night-app.herokuapp.com/dates)
