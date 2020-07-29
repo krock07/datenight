@@ -28,7 +28,7 @@ Used to make the logo
 - React
 - Javascript
 - Express.JS
-A web application server framework for the backend that helps with the following requests: GET, PUT,POST DElETE and UPDATE
+A web application server framework for the backend that helps with the following requests: GET, PUT,POST DELETE and UPDATE
 ## Screen Shots
 ## logo
 ![](https://raw.githubusercontent.com/krock07/datenight/master/public/images/DATE-NIGHT.png)
